@@ -15,38 +15,21 @@ import Moya
 
 enum ___VARIABLE_sceneName___Request {
     
+    struct FetchItems: ParamTargetType {
+        
+        typealias RequestType = ___VARIABLE_sceneName___Models.SomeThing.Request
+        typealias ResponseType = ___VARIABLE_sceneName___Models.SomeThing.Response
+        
+        var param: RequestType
+        
+        init(param: RequestType) {
+            self.param = param
+        }
+        
+        var path: String {
+            ""
+        }
+        
+    }
+    
 }
-
-//extension ___VARIABLE_sceneName___Request: TargetType {
-//
-//    var baseURL: URL {
-//        URL(string: "")!
-//    }
-//    
-//    var path: String {
-//        switch self {
-//        case .
-//            return ""
-//        }
-//    }
-//    
-//    var method: Moya.Method {
-//        .post
-//    }
-//    
-//    var sampleData: Data {
-//        Data()
-//    }
-//    
-//    var task: Task {
-//        switch self {
-//        case let .:
-//            return .requestParameters(parameters: ["": ], encoding: URLEncoding.default)
-//        }
-//    }
-//    
-//    var headers: [String : String]? {
-//        return ["content-type": "application/x-www-form-urlencoded"]
-//    }
-//
-//}

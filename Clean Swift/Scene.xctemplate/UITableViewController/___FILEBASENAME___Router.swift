@@ -12,7 +12,7 @@
 
 import UIKit
 
-protocol ___VARIABLE_sceneName___RoutingLogic: class {
+protocol ___VARIABLE_sceneName___RoutingLogic: AnyObject {
     
 }
 

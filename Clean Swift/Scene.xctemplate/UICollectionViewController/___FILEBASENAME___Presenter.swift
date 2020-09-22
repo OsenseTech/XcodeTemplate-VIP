@@ -21,7 +21,7 @@ class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLog
     weak var viewController: ___VARIABLE_sceneName___DisplayLogic?
     
     func presentError(_ error: Error) {
-        viewController?.presentErrorAlert(message: error.localizedDescription)
+        viewController?.displayErrorAlert(message: error.localizedDescription)
     }
     
 }

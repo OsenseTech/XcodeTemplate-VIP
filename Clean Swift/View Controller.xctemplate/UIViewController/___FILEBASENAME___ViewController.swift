@@ -12,7 +12,7 @@
 
 import UIKit
 
-protocol ___VARIABLE_sceneName___DisplayLogic: class {
+protocol ___VARIABLE_sceneName___DisplayLogic: AnyObject {
     func displaySuccessAlert(message: String)
     func displayErrorAlert(message: String)
 }
