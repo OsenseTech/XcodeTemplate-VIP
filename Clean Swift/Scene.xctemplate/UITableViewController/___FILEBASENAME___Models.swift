@@ -15,13 +15,12 @@ import Foundation
 enum ___VARIABLE_sceneName___Models {
     
     enum Something {
-        struct Request: Codable {
+        struct Request {
             
         }
         
-        struct Response: StandardResponseProtocol {
-            let code: String
-            let message: String
+        struct Response {
+            
         }
         
         struct ViewModel {

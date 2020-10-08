@@ -14,7 +14,7 @@ import Foundation
 import PromiseKit
 import Moya
 
-class ___VARIABLE_sceneName___Worker: WorkerProtocol {
+class ___VARIABLE_sceneName___Worker: Worker {
     
 //    let provider = MoyaProvider<___VARIABLE_sceneName___Request>()
     
