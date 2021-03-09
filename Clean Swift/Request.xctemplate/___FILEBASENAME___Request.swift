@@ -17,8 +17,22 @@ enum ___VARIABLE_sceneName___Request {
     
     struct FetchItems: ParamTargetType {
         
-        typealias RequestType = ___VARIABLE_sceneName___Models.SomeThing.Request
-        typealias ResponseType = ___VARIABLE_sceneName___Models.SomeThing.Response
+        struct Request: Codable {
+            
+        }
+        
+        struct Response: StandardResponseProtocol {
+            let code: String
+            let message: String
+            
+            enum CodingKeys: String, CodingKey {
+                case code = "Code"
+                case message = "Message"
+            }
+        }
+        
+        typealias RequestType = Request
+        typealias ResponseType = Response
         
         var param: RequestType
         
